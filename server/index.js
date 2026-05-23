@@ -8,6 +8,9 @@ PORT = process.env.PORT || 8080;
 const app = express();
 
 const authRoutes = require("./routes/auth"); //added auth route
+const documentRoutes = require("./routes/uploads");
+const itineraryRoutes = require("./routes/itineraries");
+const shareRoutes = require("./routes/share");
 
 app.use(helmet());
 app.use(cors({ origin: process.env.CLIENT_URL, credentials: true }));
@@ -16,6 +19,9 @@ app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 
 app.use("/api/auth", authRoutes);
+app.use("/api/uploads", documentRoutes);
+app.use("/api/itineraries", itineraryRoutes);
+app.use("/api/share", shareRoutes);
 //heallth route
 app.get("/api/health", (req, res) => res.json({ status: "ok" }));
 
