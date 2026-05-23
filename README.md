@@ -24,7 +24,7 @@
 
 - 🔐 **JWT Authentication** — Secure register/login with access + refresh token rotation
 - 📄 **Document Upload** — Supports PDF, JPG, PNG, WEBP (drag-and-drop)
-- 🤖 **AI Extraction** — Claude API reads your booking documents and pulls out flights, hotels, dates, and destinations
+- 🤖 **AI Extraction** — Gemini API reads your booking documents and pulls out flights, hotels, dates, and destinations
 - 🗺️ **Itinerary Generation** — Structured day-by-day travel plan generated automatically
 - 📚 **Trip History** — All itineraries saved per user in MongoDB
 - 🔗 **Shareable Links** — Share any itinerary via a public link — no login required for viewers
